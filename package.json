@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "is-plain-object": "^2.0.4",
+    "is-string": "^1.0.4",
+    "isnumeric": "^0.3.2",
+    "param-case": "^2.1.1"
+  },
+  "name": "object-string-to-css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
