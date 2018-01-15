@@ -1,4 +1,13 @@
 {
+  "name": "object-string-to-css",
+  "version": "1.0.0",
+  "description": "Turn object/string to CSS",
+  "main": "index.js",
+  "author": "Vija02",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha"
+  },
   "dependencies": {
     "add-px-to-style": "^1.0.0",
     "is-plain-object": "^2.0.4",
@@ -6,17 +15,8 @@
     "isnumeric": "^0.3.2",
     "param-case": "^2.1.1"
   },
-  "name": "object-string-to-css",
-  "version": "1.0.0",
-  "main": "index.js",
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^4.1.0"
-  },
-  "scripts": {
-    "test": "mocha"
-  },
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  }
 }
