@@ -29,6 +29,15 @@ describe('index', function () {
     });
     it('should parse object to css correctly', function () {
       chai.expect(objectStringToCSS({ backgroundColor: "red" }, ".class").split("\n")[1] === "\tbackground-color: red;").to.be.true
+      chai.expect(objectStringToCSS({ marginRight: "2em" }, ".class").split("\n")[1] === "\tmargin-right: 2em;").to.be.true
+      chai.expect(objectStringToCSS({ flex: "1 1 0" }, ".class").split("\n")[1] === "\tflex: 1 1 0;").to.be.true
+    });
+    it('should parse appropriate number with px', function () {
+      chai.expect(objectStringToCSS({ width: 100 }, ".class").split("\n")[1] === "\twidth: 100px;").to.be.true
+      chai.expect(objectStringToCSS({ height: 500 }, ".class").split("\n")[1] === "\theight: 500px;").to.be.true
+
+      chai.expect(objectStringToCSS({ zIndex: 5 }, ".class").split("\n")[1] === "\tz-index: 5;").to.be.true
+      chai.expect(objectStringToCSS({ flex: 1 }, ".class").split("\n")[1] === "\tflex: 1;").to.be.true
     });
   });
 });
