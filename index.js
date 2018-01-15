@@ -1,7 +1,7 @@
 var paramCase = require('param-case')
 var isNumeric = require('isnumeric')
 var isString = require('is-string')
-var isPlainObject = require('param-case')
+var isPlainObject = require('is-plain-object')
 var addPxToStyle = require('add-px-to-style');
 
 // Convert object string into proper JSON
