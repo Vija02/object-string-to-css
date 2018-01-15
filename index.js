@@ -23,7 +23,11 @@ module.exports = function (objParam, selectorParam) {
   } else if (isPlainObject(objParam)) {
     object = objParam
   } else {
-    throw new SyntaxError("Parameter should be either string or an object")
+    throw new SyntaxError("Object should be either string or an object")
+  }
+
+  if (!isString(selectorParam)) {
+    throw new SyntaxError("Selector should be a string")
   }
 
   var cssArray = []
