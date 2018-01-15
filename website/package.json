@@ -1,0 +1,13 @@
+{
+  "name": "react-object-to-css-website",
+  "version": "1.0.0",
+  "private": false,
+  "dependencies": {
+    "babel-preset-react": "^6.24.1",
+    "nervjs": "^1.2.4",
+    "parcel-bundler": "^1.4.1"
+  },
+  "scripts": {
+    "build": "parcel index.html"
+  }
+}
