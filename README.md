@@ -8,7 +8,7 @@ $ npm install --save object-string-to-css
 ```
 
 ## Usage
-
+[Online](https://vija02.github.io/object-string-to-css/)  or  
 ```js
 const objectStringToCSS = require('object-string-to-css');
 
