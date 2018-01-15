@@ -2,6 +2,7 @@ var paramCase = require('param-case')
 var isNumeric = require('isnumeric')
 var isString = require('is-string')
 var isPlainObject = require('param-case')
+var addPxToStyle = require('add-px-to-style');
 
 // Convert object string into proper JSON
 function JSONize(str) {
@@ -32,7 +33,7 @@ module.exports = function (objParam, selectorParam) {
   for (var key in object) {
     var value = object[key]
     if (isNumeric(value)) {
-      value += "px"
+      value = addPxToStyle(key, value)
     }
     cssArray.push("\t" + paramCase(key) + ": " + value + ";")
   }

@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "add-px-to-style": "^1.0.0",
     "is-plain-object": "^2.0.4",
     "is-string": "^1.0.4",
     "isnumeric": "^0.3.2",
